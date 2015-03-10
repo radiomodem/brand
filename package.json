@@ -2,6 +2,7 @@
   "name": "modem-brand",
   "private": true,
   "devDependencies": {
+    "del": "^1.1.1",
     "gulp": "^3.8.10",
     "gulp-cache": "^0.2.4",
     "gulp-if": "^1.2.5",
