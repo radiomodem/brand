@@ -30,6 +30,10 @@ gulp.task("img", function () {
     }))
 })
 
+gulp.task("build", ["img"])
+
+gulp.task("default", ["build"])
+
 gulp.task("watch", function () {
   gulp.watch("img/*.sketch", ["img"])
 })
