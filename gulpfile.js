@@ -4,7 +4,7 @@ var gulp = require("gulp")
   , $ = require("gulp-load-plugins")()
   , del = require("del")
 
-gulp.task("img", function () {
+gulp.task("img", ["img:clean"], function () {
   return gulp.src("img/*.sketch")
     .pipe($.sketch({
       export: "slices"
@@ -24,10 +24,14 @@ gulp.task("img", function () {
       , { removeDesc: true }
       ]
     })))
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("dist/img"))
     .pipe($.size({
       showFiles: true
     }))
+})
+
+gulp.task("img:clean", function (done) {
+  del(["dist/img"], done);
 })
 
 gulp.task("build", ["img"])
