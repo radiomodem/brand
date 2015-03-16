@@ -1,6 +1,10 @@
 {
   "name": "modem-brand",
   "private": true,
+  "scripts": {
+    "start": "gulp watch --silent",
+    "build": "gulp build --silent"
+  },
   "devDependencies": {
     "del": "^1.1.1",
     "gulp": "^3.8.10",
