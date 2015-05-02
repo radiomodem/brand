@@ -18,12 +18,12 @@ gulp.task("img", ["img:clean"], function () {
       ]
     }))
     .pipe($.ignore.exclude(/@2x.svg$/))
-    .pipe($.cache($.imagemin({
+    .pipe($.imagemin({
       svgoPlugins: [
         { removeTitle: true }
       , { removeDesc: true }
       ]
-    })))
+    }))
     .pipe(gulp.dest("dist/img"))
     .pipe($.size({
       showFiles: true
