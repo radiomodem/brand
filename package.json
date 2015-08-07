@@ -3,7 +3,11 @@
   "private": true,
   "scripts": {
     "start": "gulp watch --silent",
-    "build": "gulp build --silent"
+    "build": "gulp build --silent",
+    "test": "xo"
+  },
+  "xo": {
+    "space": true
   },
   "devDependencies": {
     "del": "^1.1.1",
@@ -11,9 +15,10 @@
     "gulp-if": "^1.2.5",
     "gulp-ignore": "^1.2.1",
     "gulp-imagemin": "^2.1.0",
-    "gulp-load-plugins": "^0.10.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
     "gulp-plumber": "^1.0.0",
     "gulp-size": "^1.2.0",
-    "gulp-sketch": "0.0.9"
+    "gulp-sketch": "0.0.10",
+    "xo": "^0.5.2"
   }
 }
