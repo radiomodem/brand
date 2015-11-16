@@ -1,5 +1,7 @@
 # Modem: Brand
 
+> Branding guidelines and graphical assets for Modem
+
 [![Dependency Status](https://gemnasium.com/radio-modem/brand.svg)](https://gemnasium.com/radio-modem/brand)
 
 ---
