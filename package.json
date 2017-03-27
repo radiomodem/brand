@@ -2,12 +2,8 @@
   "name": "modem-brand",
   "private": true,
   "scripts": {
-    "start": "gulp watch --silent",
-    "build": "gulp build --silent",
-    "test": "xo"
-  },
-  "xo": {
-    "space": true
+    "start": "gulp watch",
+    "build": "gulp build"
   },
   "devDependencies": {
     "del": "^1.1.1",
@@ -20,5 +16,8 @@
     "gulp-size": "^1.2.0",
     "gulp-sketch": "0.0.10",
     "xo": "^0.5.2"
+  },
+  "xo": {
+    "space": true
   }
 }
